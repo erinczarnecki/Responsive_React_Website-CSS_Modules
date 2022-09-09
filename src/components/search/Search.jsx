@@ -26,8 +26,9 @@ const Search = () => {
                     //Swiper modules
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={10}
-                    slidesPerView={5}
+                    slidesPerView={4}
                     navigation
+                    loop="true"
                     breakpoints={{
                         //window >=340px
                         340: {
@@ -42,7 +43,7 @@ const Search = () => {
                         //widow >=1040
                         1040: {
                             width: 1040,
-                            slidesPerView: 5,
+                            slidesPerView: 4,
                         },
                     }}
                     onSlideChange={() => console.log('slide change')}
